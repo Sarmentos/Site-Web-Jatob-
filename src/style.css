@@ -1,0 +1,373 @@
+@import url('"C:\Repositorio-Lucas\jatoba\src\Movel-header.png"');
+
+:root{
+    --text-title: 'Poppins';
+    --text-title-color: #ffff;
+    --bg-color-blue: #162E54;
+}
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color-blue);
+}
+
+#img-header{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-image{
+    width: 70%;
+    height: 90%;
+    background-color: #fff;
+    background-image: url(Movel-header.png);
+    background-size: cover;
+    opacity: 65%;
+    transition: 0.8s;
+}
+
+.bg-image:hover{
+    transition: 0.8s;
+    opacity: 100%;
+}
+
+
+#container-text-header{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    text-align: center;
+    gap: 20px;
+
+}
+
+.text-title h1{
+    font-family: var(--text-title);
+    color: var(--text-title-color);
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.text-body p{
+    font-family: var(--text-title);
+    color: var(--text-title-color);
+    font-weight: normal;
+}
+
+@media (width < 750px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    #img-header{
+        width: 100%;
+        height: 60vh;
+    }
+    #container-text-header{
+        width: 100%;
+        height: 40vh;
+        padding-bottom: 20px;
+    }
+}
+
+
+/* Seção de Design de Móveis */
+.design-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fafafa;
+}
+
+.design-section h1 {
+    font-size: 2.5rem;
+}
+
+.design-section p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.design-section button {
+    padding: 0.75rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.design-section button:hover {
+    background-color: #555;
+}
+
+.name h5 {
+    border: 1px solid white;
+    height: fit-content;
+    padding: 10px;
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Coleções */
+.colecoes {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.colecoes h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.colecoes-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.colecao-item {
+    text-align: center;
+    flex: 1;
+}
+
+.colecao-item img {
+    width: 100%;
+    height: auto;
+}
+
+.colecao-item p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Seção de Orçamento */
+.orcamento-section {
+    background-color: #eaeaea;
+    padding: 2rem;
+    text-align: center;
+}
+
+.orcamento-section form {
+    margin-top: 1.5rem;
+}
+
+.orcamento-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.orcamento-section input {
+    padding: 0.75rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.orcamento-section button {
+    padding: 0.75rem 2rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.orcamento-section button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+.snowflake:nth-child(1) {
+    left: 10%;
+    animation-duration: 7s;
+    animation-delay: 0s;
+    width: 8px;
+    height: 8px;
+}
+
+.snowflake:nth-child(2) {
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    width: 12px;
+    height: 12px;
+}
+
+.snowflake:nth-child(3) {
+    left: 30%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.snowflake:nth-child(4) {
+    left: 40%;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+
+.snowflake:nth-child(5) {
+    left: 50%;
+    animation-duration: 10s;
+    animation-delay: 4s;
+}
+
+.snowflake:nth-child(6) {
+    left: 60%;
+    animation-duration: 6s;
+    animation-delay: 2
+}.name {
+    position: absolute;
+    color: white;
+    top: 0px;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+.name h5 {
+    border: 1px solid white;
+    height: fit-content;
+    padding: 10px;
+}@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.name h5 {
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; 
+    padding: 10px;
+    font-size: 70px;
+    font-family: 'Courier', monospace; 
+    animation: typing 2.5s steps(30, end), blink 0.75s step-end infinite; 
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.name h5 {
+    border-right: 2px solid black; 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; 
+    padding: 10px;
+    font-size: 70px;
+    font-family: 'Courier', monospace; 
+    background-color: white; 
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    animation: typing 3.5s steps(30, end), blink 0.75s step-end infinite;
+}
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%; 
+    }
+    100% {
+        width: 0; 
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.name h5 {
+    border-right: 2px solid black; 
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; 
+    padding: 10px;
+    font-size: 70px;
+    font-family: 'Courier', monospace; 
+    background-color: white; 
+    color: black; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    animation: typing 12s steps(30, end) infinite, blink 0.75s step-end infinite; 
+}
